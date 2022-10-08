@@ -55,35 +55,35 @@ Describe at least:
   - Address at stand up meeting the next day
   - Readjust tasks and timelines in project management
 How will you communicate after hours and on the weekend?
-Slack
-What is your strategy for ensuring everyone’s voice is heard?
-Everyone answers two questions during the stand up meeting
-How will you ensure that you are creating a safe environment where everyone feels comfortable speaking up?
-Affirming everyone's contributions are valuable to the project
-Work Plan
+  - Slack
+5. What is your strategy for ensuring everyone’s voice is heard?
+  - Everyone answers two questions during the stand up meeting
+6. How will you ensure that you are creating a safe environment where everyone feels comfortable speaking up?
+  - Affirming everyone's contributions are valuable to the project
+  - Work Plan
 Explain your work plan to track whether everyone is contributing equally to all parts of the project, and that each person is working on “meaty” problems. This should prevent “lone wolf” efforts and “siloed” efforts.
 Describe at least:
-How you will identify tasks, assign tasks, know when they are complete, and manage work in general?
-Project management software
-What project management tool will be used?
-Trello
-Git Process
-Plan out what your team’s Git workflow looks like for coding tasks.
+1. How you will identify tasks, assign tasks, know when they are complete, and manage work in general?
+  - Project management software
+2. What project management tool will be used?
+  - Trello
+  - Git Process
+3. Plan out what your team’s Git workflow looks like for coding tasks.
 Describe at least:
-What components of your project will live on GitHub?
-Front end repo
-Backend repo
-How will you share the repository with your teammates?
-Make an organization
-What is your Git flow?
-Work on individual branches (feature branch)
-Will you be using a PR review workflow? If so, consider:
-How many people must review a PR?
-One person
-Who merges PRs?
-Any Team member
-How often will you merge?
-Once we are done with a feature
-How will you communicate that it’s time to merge?
-Slack
-Before 6pm PST
+1. What components of your project will live on GitHub?
+  - Front end repo
+  - Backend repo
+2. How will you share the repository with your teammates?
+  - Make an organization
+3. What is your Git flow?
+  - Work on individual branches (feature branch)
+4. Will you be using a PR review workflow? If so, consider:
+  - How many people must review a PR?
+    - One person
+  - Who merges PRs?
+    - Any Team member
+  - How often will you merge?
+    - Once we are done with a feature
+  - How will you communicate that it’s time to merge?
+    - Slack
+    - Before 6pm PST
