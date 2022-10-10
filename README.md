@@ -12,7 +12,7 @@ Every person on your team is an asset. This is your chance to discover the hidde
 Describe at least:
 1. What are the key strengths of each person on the team?
   - Diego: Good at debugging, Team work
-  - Megan: CSS, 
+  - Megan: CSS, background in design.
   - Matthew: Communication, teams and project management
   - Sage: Research, Backend/Frontend
 2. How can you best utilize these strengths in the execution of your project?
