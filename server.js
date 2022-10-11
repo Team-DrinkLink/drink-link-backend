@@ -1,19 +1,20 @@
 "use strict";
-
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 require("dotenv").config();
-const getDrinks = require("./modules/getDrinks");
+const authorize = require("./auth/authorize");
+const getCocktails = require("./modules/getCocktails");
 const getUsers = require("./modules/getUsers");
 const createUser = require("./modules/createUser");
 const deleteUser = require("./modules/deleteUser");
-const addDrinkToFavorites = require("./modules/addDrinkToFavorites");
-const deleteDrink = require("./modules/deleteDrink");
+const addCocktailToFavorites = require("./modules/addCocktailToFavorites");
+const deleteCocktailFromFavorites = require("./modules/deleteCocktailFromFavorites");
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+// app.use(authorize())
 
 mongoose.connect(process.env.MONGO_DB);
 const mongoDbConnection = mongoose.connection;
@@ -39,9 +40,9 @@ app.get("/users", getUsers);
 app.post("/users", createUser);
 app.delete("/users/:id", deleteUser);
 
-app.get("/drinks", getDrinks);
-app.post("/drinks", addDrinkToFavorites);
-app.delete("/drinks/:id", deleteDrink);
+app.get("/drinks", getCocktails);
+app.post("/drinks", addCocktailToFavorites);
+app.delete("/drinks/:id", deleteCocktailFromFavorites);
 
 app.get("*", (req, res) => {
   res.status(404).send("404 Not Found");

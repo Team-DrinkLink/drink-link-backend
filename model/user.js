@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const cocktails = require("./cocktails");
 const { Schema } = mongoose;
 
 const userSchema = new Schema(
@@ -8,14 +7,7 @@ const userSchema = new Schema(
     lastName: { type: String, required: true },
     userName: { type: String, required: true },
     email: { type: String, required: true },
-    favoriteDrinks: [
-      {
-        title: { type: String, required: true },
-        ingredients: { type: String, required: true },
-        instructions: { type: String, required: true },
-        image: { type: String, required: true },
-      },
-    ],
+    favoriteCocktails: [{ type: Schema.ObjectId, ref: "cocktails" }],
   },
   { timestamps: true }
 );
