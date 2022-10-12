@@ -6,7 +6,7 @@ async function deleteCocktailFromFavorites(req, res, next) {
     if (!cocktail) {
       res.status(404).send("Drink not found");
     } else {
-      let foundUser = await User.findOne({ email: req.body.email });
+      let foundUser = await User.findOne({ email: req.user.email });
       let userCocktails = foundUser.favoriteCocktails;
       let filteredCocktails = userCocktails.filter(
         (item) => item._id.toString() != req.params.id
