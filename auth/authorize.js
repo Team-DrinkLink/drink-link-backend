@@ -16,7 +16,7 @@ function verifyUser(request, response, next) {
     const token = request.headers.authorization.split(' ')[1];
     jwt.verify(token, getKey, {}, valid);
   } catch (error) {
-    next('Not Authorized');
+    next('Not Authorized backend');
   }
 }
 
@@ -33,6 +33,7 @@ const client = jwksClient({
 // Match the JWT's key to your Auth0 Account Key so we can validate it
 function getKey(header, callback) {
   client.getSigningKey(header.kid, function (err, key) {
+    console.log('key', key);
     const signingKey = key.publicKey || key.rsaPublicKey;
     callback(null, signingKey);
   });
